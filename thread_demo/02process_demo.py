@@ -2,7 +2,7 @@
 '''
 author:zhangyu
 date:2021/2/13
-description:创建子进程并运行
+description: 创建子进程并运行
 '''
 from multiprocessing import Process
 
