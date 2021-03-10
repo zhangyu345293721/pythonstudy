@@ -2,6 +2,7 @@
 '''
 author:zhangyu
 date:2021/2/13
+description：唱歌和跳舞
 '''
 from time import sleep
 
@@ -28,6 +29,7 @@ def dance() -> None:
         print('正在跳舞...%d' % i)
         sleep(1)
 
+
 if __name__ == '__main__':
     sing()
-    # dance()
+    dance()
