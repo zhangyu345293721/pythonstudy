@@ -2,26 +2,21 @@
 '''
 author:zhangyu
 date:2021/2/13
+
 '''
 import time
-from threading import Thread,Lock
+from threading import Thread
 num=0
-#创建一个互斥锁
-lock=Lock()
 def test1():
     global num
-    lock.acquire() #上锁
     for i in range(100000):
         num+=1
-    lock.release() #释放锁
     print('执行test1函数num的值：',num)
 
 def test2():
     global num
-    lock.acquire()  # 上锁
     for i in range(100000):
         num+=1
-    lock.release()  # 释放锁
     print('执行test2函数num的值：',num)
 
 if __name__ == '__main__':

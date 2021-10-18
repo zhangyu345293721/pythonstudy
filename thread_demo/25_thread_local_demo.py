@@ -20,8 +20,14 @@ def process_student() -> None:
     print('线程名：%s  学生姓名:%s' % (threading.current_thread().getName(), student_name))
 
 
-def process_thread(name):
-    # 将传入的name值绑定到local的name上
+def process_thread(name: str) -> None:
+    '''
+         将传入的name值绑定到local的name上
+    Args:
+        name: 传入的名字
+    Returns:
+        None
+    '''
     local.name = name
     process_student()
 

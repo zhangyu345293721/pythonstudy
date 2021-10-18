@@ -4,12 +4,19 @@ author:zhangyu
 date:2021/2/13
 descripton:join方法的使用
 '''
-# 导入模块
 from multiprocessing import Process
 from time import sleep
 
 
-def worker(interval):
+def worker(interval: float) -> None:
+    '''
+        工作方法
+    Args:
+        interval:
+
+    Returns:
+
+    '''
     print('work start')
     sleep(interval)
     print('work end')
